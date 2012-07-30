@@ -11,6 +11,9 @@
 #   config.output_style = :compact
 # end
 
+require 'github/markup'
+#GitHub::Markup.render(file, File.read(file))
+
 ###
 # Page options, layouts, aliases and proxies
 ###

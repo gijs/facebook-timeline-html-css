@@ -5,6 +5,7 @@
     list-style:none;
     padding:0;
     margin:0;
+    position:relative;
     
     > li{
       float:left;
@@ -12,6 +13,7 @@
       width:(902px - 30px)/2px;
       margin-bottom:15px;
       position:relative;
+      z-index: 2;
     }
     
     > .right{
@@ -46,12 +48,27 @@
       
       .pointer{
         background-image:url(../images/icons-5.png);
-        background-position:-25px -28px;
+        background-position:-26px -28px;
         height:21px;
         width:15px;
         left:50%;
         top:-20px !important;
         margin-left:-7px;
+      }
+    }
+    
+    /* Spine */
+    
+    .spine{
+      position:absolute;
+      left:436px;
+      width:29px;
+      height:100%;
+      z-index: 1;
+      
+      > a, a:visited{
+        display:block;
+        height:100%;
       }
     }
 }
