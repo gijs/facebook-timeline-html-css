@@ -4,7 +4,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  position: relative;
   /* Highlight */
+
+  /* Spine */
 
 }
 .timeline > li {
@@ -13,6 +16,7 @@
   width: 436px;
   margin-bottom: 15px;
   position: relative;
+  z-index: 2;
 }
 .timeline > .right {
   float: right;
@@ -44,12 +48,24 @@
 }
 .timeline .highlight .pointer {
   background-image: url(../images/icons-5.png);
-  background-position: -25px -28px;
+  background-position: -26px -28px;
   height: 21px;
   width: 15px;
   left: 50%;
   top: -20px !important;
   margin-left: -7px;
+}
+.timeline .spine {
+  position: absolute;
+  left: 436px;
+  width: 29px;
+  height: 100%;
+  z-index: 1;
+}
+.timeline .spine > a,
+.timeline .spine a:visited {
+  display: block;
+  height: 100%;
 }
 /* Unit */
 .unit {
